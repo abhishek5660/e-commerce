@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Search with Debouncing</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">E-Shop</div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#cart">Cart</a></li> <!-- Link to Cart Section -->
+                </ul>
+            </nav>
+            <div class="mobile-menu-icon">&#9776;</div>
+        </div>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <h1>Search Products</h1>
+        <input type="text" id="searchInput" placeholder="Type something..." />
+        <div id="output" class="product-list"></div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart" class="cart-section">
+        <h2>Your Cart</h2>
+        <div id="cartOutput"></div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Design by Abhishek Katoch</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
