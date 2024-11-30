@@ -14,13 +14,32 @@
             <nav class="nav-menu">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
+                    <li>
+                        <a href="#">Categories</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Fashion</a></li>
+                            <li><a href="#">Home Appliances</a></li>
+                            <li><a href="#">Books</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">Contact</a></li>
-                    <li><a href="#cart">Cart</a></li> <!-- Link to Cart Section -->
+                    <li>
+                        <a href="#cart" class="cart-link">
+                            <span class="cart-icon">&#128722;</span> 
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
-            <div class="mobile-menu-icon">&#9776;</div>
+            
+           <!-- User Login/Signup -->
+           <div class="user-auth">
+            <button id="loginBtn">Login</button>
+            <button id="signupBtn">Sign Up</button>
         </div>
+        <div class="mobile-menu-icon">&#9776;</div>
+    </div>
     </header>
 
     <!-- Search Section -->
