@@ -111,3 +111,30 @@ searchInput.addEventListener("input", (e) => {
 
 // Fetch all products by default when the page loads
 fetchData();
+
+
+// Select DOM Elements
+const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
+const navMenu = document.querySelector('.nav-menu');
+const loginBtn = document.getElementById('loginBtn');
+const signupBtn = document.getElementById('signupBtn');
+
+// Responsive Navbar Toggle
+mobileMenuIcon.addEventListener('click', () => {
+    // Toggle display for the nav menu
+    if (navMenu.style.display === 'block') {
+        navMenu.style.display = 'none';
+    } else {
+        navMenu.style.display = 'block';
+    }
+});
+
+// Login Button Click Handler
+loginBtn.addEventListener('click', () => {
+    alert('Login functionality is under development.');
+});
+
+// Signup Button Click Handler
+signupBtn.addEventListener('click', () => {
+    alert('Sign-up functionality is under development.');
+});
